@@ -1,0 +1,83 @@
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/login.jpg);
+    background-size: cover;
+}
+
+.content .img h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 220px 40px;
+    font-size: 45px;
+    display: block;
+    width: 100%;
+    line-height: 70px;
+}
+
+.content .img h1 span {
+    font-size: 102px;
+    display: block;
+}
+
+@media (max-width:600px) {
+    body {
+        max-height: 100%;
+        overflow-y: hidden;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .img {
+        display: none;
+    }
+
+    /* Login */
+    .content .login {
+        margin: 20px;
+    }
+
+    .content .login h1 {
+        font-size: 34px;
+        margin: 40px 0 80px;
+    }
+
+    .content .login form p {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .content .login form input {
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 10px;
+        padding-right: 0;
+        width: 90%;
+    }
+
+    .content .login form i {
+        font-size: 17px;
+    }
+
+
+    .content .login form input[type='submit'] {
+        width: 100%;
+        display: block;
+        margin: 120px auto;
+    }
+}

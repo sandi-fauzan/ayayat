@@ -1,0 +1,376 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100% !important;
+}
+
+/* Nav */
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    margin-left: 60px;
+    font-weight: 300;
+}
+
+.nav>.nav-header>.nav-title span {
+    font-weight: 600;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    margin-right: 150px;
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav>.nav-links>a:hover {
+    background-color: rgba(53, 53, 53, 0.24);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+
+
+/* Jumbo */
+.jumbo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/about1.jpg);
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.jumbo .content {
+    width: 100%;
+    margin: 130px auto;
+    position: absolute;
+    text-align: center;
+}
+
+.jumbo h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.jumbo p {
+    color: rgb(241, 241, 241);
+    font-size: 16px;
+    margin: 30px auto;
+    padding: 0 260px;
+}
+
+/* Contact */
+.contact {
+    margin: 40px 20px;
+}
+
+.contact h1 {
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    margin: 40px 180px 0;
+}
+
+.contact .form {
+    margin-top: 20px;
+    padding: 20px 180px;
+}
+
+.contact .form label,
+.contact .form input {
+    margin: 20px 0;
+    display: block;
+}
+
+.contact .form input {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact .form textarea {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact .form ::placeholder {
+    font-size: 11px;
+}
+
+/* Find Me */
+.find-me {
+    margin: 40px 200px 0;
+}
+
+.find-me h1 {
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.find-me a {
+    font-size: 23px;
+    margin-top: 10px;
+    display: block;
+}
+
+.find-me a:nth-child(2) {
+    margin-top: 40px;
+}
+
+.find-me a:nth-child(5) {
+    margin-top: 40px;
+}
+
+
+/* Footer */
+.footer {
+    padding: 60px 20px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+
+
+@media (max-width:600px) {
+    body {
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* Nav */
+    .nav {
+        margin-top: 14px;
+    }
+
+    .nav>.nav-header>.nav-title {
+        margin-left: 10px;
+    }
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        z-index: 1;
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        font-size: 22px;
+        width: 100%;
+        color: black;
+        margin: 30px auto;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+
+    /* Search */
+    input[type="search"] {
+        background: none;
+        transition: .9s;
+        color: black;
+        margin-left: 30px;
+        border-color: black;
+        margin-top: 30px;
+    }
+
+    input[type="search"]:hover {
+        width: 260px;
+    }
+
+    .nav i {
+        color: black;
+        margin-top: 30px;
+
+    }
+
+
+    /* Jumbo */
+    .jumbo {
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        height: 700px;
+        width: 100%;
+    }
+
+    .jumbo .content {
+        width: 100%;
+        margin: 150px auto;
+        position: absolute;
+        text-align: center;
+    }
+
+    .jumbo h1 {
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .jumbo p {
+        color: rgb(241, 241, 241);
+        font-size: 12px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .jumbo button {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    /* Contact */
+    .contact {
+        margin: 40px 20px;
+    }
+
+    .contact h1 {
+        font-size: 32px;
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+    }
+
+    .contact .form {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .contact .form label,
+    .contact .form input {
+        margin: 20px 0;
+        display: block;
+    }
+
+    .contact .form input {
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact .form textarea {
+        border: 1px solid;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact .form ::placeholder {
+        font-size: 11px;
+    }
+
+    /* Find Me */
+    .find-me {
+        margin: 40px 20px;
+    }
+
+    .find-me h1 {
+        font-size: 32px;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+    }
+
+    .find-me a {
+        font-size: 18px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .find-me a:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    .find-me a:nth-child(5) {
+        margin-top: 40px;
+    }
+
+
+
+}

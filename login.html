@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Tailwind Css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="content grid grid-cols-2">
+        <div class="img">
+            <h1 class="text-white">Fashion Is <span>Everything.</span></h1>
+        </div>
+        <div class="login mt-20 ml-12">
+            <h1 class=" text-4xl font-bold">Sign In</h1>
+
+            <form action="index.html">
+                <p class="mt-16 text-lg text-gray-500">Username</p>
+                <input type="text" required oninvalid=" 
+                    this.setCustomValidity('Enter Your Username Here')" oninput="this.setCustomValidity('')"
+                    class="text-gray-600 mt-3 border-b border-gray-300 w-auto text-base py-3 pl-4 pr-32 outline-none transition duration-300 hover:border-black"
+                    placeholder="Enter Your Username...">
+                <i class="fa fa-user fa-lg  text-gray-600"></i>
+
+                <p class="mt-10 text-lg text-gray-500">Password</p>
+                <input type="password" required oninvalid=" 
+                this.setCustomValidity('Enter Your Password Here')" oninput="this.setCustomValidity('')"
+                    class="text-gray-600 mt-3 border-b border-gray-300 w-auto text-base py-3 pl-4 pr-32 outline-none transition duration-300 hover:border-black"
+                    placeholder="Enter Your Password...">
+                <i class="fa fa-key fa-lg text-gray-600"></i>
+
+
+                <input type="submit" value="Sign In"
+                    class="block mt-20 w-36 bg-black text-white py-3 text-center cursor-pointer hover:opacity-80 transition">
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
